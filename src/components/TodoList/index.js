@@ -3,7 +3,7 @@ import { addTodo, removeTodo, toggleTodo } from '../../actions'
 import { connect } from "react-redux";
 import styles from "./style.module.scss";
 import TodoItem from "../TodoItem"
-
+import NewTodoButton from "../NewTodoButton"
 const mapStateToProps = state => state
 
 const mapDispatchToProps = {
@@ -27,6 +27,9 @@ function TodoList(props) {
                             onClick={() => props.toggleTodo(i)}
                         />)
                 }
+            </div>
+            <div className={styles.buttonWrapper}>
+                <NewTodoButton />
             </div>
         </div>
     )

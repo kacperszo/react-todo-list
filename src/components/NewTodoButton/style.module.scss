@@ -1,0 +1,23 @@
+.button {
+    background: #7eed89;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    width: 90px;
+    height: 90px;
+    user-select: none;
+    &:hover {
+        cursor: pointer;
+    }
+    p {
+        font-family: "Roboto", "Helvetica Neue", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        align-items: center;
+        position: relative;
+        top: 10%;
+        text-align: center;
+    }
+}

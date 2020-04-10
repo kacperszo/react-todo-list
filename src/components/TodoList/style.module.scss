@@ -1,0 +1,50 @@
+.container{
+    width: 350px;
+    height: 600px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 300ms;
+}
+.header{
+    width: 100%;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+.body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+    height: 450px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+     
+    &::-webkit-scrollbar-track {
+     display: none;
+    }
+     
+    &::-webkit-scrollbar-thumb {
+      background-color: #7EED89;
+    }
+}
+.buttonWrapper{
+  position: relative;
+  left: 125px;
+  width: fit-content;
+  top: -40px;
+}
+.modalWrapper{
+  position: absolute;
+  z-index: 2;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}

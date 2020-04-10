@@ -1,0 +1,43 @@
+.container {
+    width: 364px;
+    height: 211px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: center;
+
+    h2 {
+        padding-top: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    textarea {
+        width: 318px;
+        white-space: pre-wrap;
+        height: 90px;
+        resize: none;
+        border: 1px solid #7eed89;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        &::-webkit-scrollbar-track {
+            display: none;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #7eed89;
+        }
+    }
+    button {
+        width: 124px;
+        height: 29px;
+        background: #7eed89;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        border: none;
+        border-radius: 8px;
+        color: white;
+    }
+}

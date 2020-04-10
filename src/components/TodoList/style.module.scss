@@ -41,3 +41,10 @@
   width: fit-content;
   top: -40px;
 }
+.modalWrapper{
+  position: absolute;
+  z-index: 2;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}

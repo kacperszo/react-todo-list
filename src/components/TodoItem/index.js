@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.scss';
 
-export default function TodoList(props) {
+export default function TodoItem(props) {
 
     return (
         <div

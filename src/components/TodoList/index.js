@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
-import { addTodo, removeTodo, toggleTodo } from '../../actions'
-import { connect } from "react-redux";
+import React, {useState} from 'react'
+import {addTodo, removeTodo, toggleTodo} from '../../actions'
+import {connect} from "react-redux";
 import styles from "./style.module.scss";
 import TodoItem from "../TodoItem"
 import NewTodoButton from "../NewTodoButton"
 import NewTodoModal from "../NewTodoModal"
+
 const mapStateToProps = state => state
 
 const mapDispatchToProps = {
@@ -38,16 +39,17 @@ function TodoList(props) {
                             text={item.text}
                             completed={item.completed}
                             onClick={() => props.toggleTodo(i)}
+                            onDelete={() => props.removeTodo(i)}
                         />)
                 }
             </div>
             <div className={styles.buttonWrapper}>
-                <NewTodoButton onClick={toggleModal} />
+                <NewTodoButton onClick={toggleModal}/>
             </div>
             {
                 modalOpen ?
                     <div className={styles.modalWrapper}>
-                        <NewTodoModal onSubmit={createNewTodo} />
+                        <NewTodoModal onSubmit={createNewTodo}/>
                     </div>
                     :
                     null
@@ -55,4 +57,5 @@ function TodoList(props) {
         </div>
     )
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList)

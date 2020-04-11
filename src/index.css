@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-*{
-  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+
+* {
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+    outline: none;
 }
+
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
 }
